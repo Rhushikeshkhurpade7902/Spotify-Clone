@@ -1,0 +1,284 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'montserrat',sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.25rem;
+    /* margin: 0.5rem; */
+}
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.25rem;
+
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto ;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: black;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    margin: 0.5rem;
+     padding: 0.5rem; 
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.75rem;
+    height: 100px;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.5;
+    padding: 0.5rem;
+
+}
+.nav-option:hover{
+    opacity: 1;
+
+}
+.nav-option i{
+    font-size: 1.25rem;
+    padding-right: 0.5rem;
+}
+.nav-option a{
+    font-size: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem;
+    height: 100%;
+}
+/* .option{
+    display: flex;
+
+} */
+.li-option{
+    display: flex;
+    padding: 0.5rem;
+    opacity: 0.6;
+    justify-content: space-between;
+    align-items: center;
+}
+.li-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+    padding: 0.5rem;
+
+}
+/* .li-option:hover{
+    opacity: 1;
+} */
+.icon{
+    display: flex;
+    opacity: 0.6;
+    font-size: 1.25rem;
+
+}
+.icon i{
+    margin-right: 1rem;
+}
+.icon i:hover{
+    opacity: 1;
+}
+.box{
+    background-color: #232323;
+    border-radius: 0.75rem;
+    height: 8rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+.badge{
+    background-color: #fff;
+    border: none;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    border-radius: 100px;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+.dark-badge{
+    background-color: #000;
+    color: white;
+}
+.stiky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+
+}
+.nav-item{
+    margin-right: 1rem;
+    padding-right: 0.5rem;
+}
+.stiky-nav-option button{
+    margin-right: 0.5rem;
+}
+@media(max-width :1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.card-img{
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+h2{
+    padding: 1.6rem;
+}
+.footer{
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.line{
+    opacity: 0.4;
+    width: 90%;
+    height: 50%;
+    border-top:2px solid #fff;
+
+}
+.music-player{
+    display: flex;
+}
+.album{
+
+   
+    width: 25%;
+}
+
+.player{
+    width: 50%;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.player-conrol-icons{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.playback-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-conrol-icons:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progres-bar{
+    appearance: none;
+    width: 70%;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.progres-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100%;
+    height: 0.2rem;
+}
+
+.progres-bar::-webkit-slider-thumb{
+    margin-top: -6px;
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+}
+.album1{
+    display: flex;
+}
+
+.album-img{
+    margin: 0.7rem;
+    height: 90%;
+    width: 15%;
+}
+.like-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 1.5rem; */
+    margin-left: 0.75rem;
+     
+}
+.album-para1{
+    opacity: 0.7;
+    font-size: 0.75rem;
+}
+.line-hori{
+    width: 25%;
+    line-height: 1.25rem;
+}
